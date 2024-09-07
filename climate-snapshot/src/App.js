@@ -1,22 +1,12 @@
-import logo from './logo.svg';
+import './components/NavBar/Navigation.js';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+// import Navbar from './components/NavBar/Navigation.js';
+import Navigation from './components/NavBar/Navigation.js';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/tools'>Tools</Route>
-          <Route path='/data'>Data</Route>
-          <Route path='/help'>Help</Route>
-          <Route path='/blog'>Blog</Route>
-          <Route path='/events'>Events</Route>
-          <Route path='/about'>About</Route>
-          <Route path='*'>Error 404! Page Not Found</Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+   <Navigation/>
   );
 }
 
